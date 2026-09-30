@@ -71,7 +71,14 @@ function renderProducts() {
   filtered.forEach(product => {
     const article = node("article","product-card");
     const picture = node("div","product-picture");
-    const placeholder = node("span","product-placeholder",product.icon);
+    const placeholder = node("div","product-placeholder");
+    const iconMap = {Diapers:"diaper",Wipes:"wipes",Feeding:"bottle","Baby Care":"care"};
+    const svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
+    svg.classList.add("icon");
+    const use = document.createElementNS("http://www.w3.org/2000/svg","use");
+    use.setAttribute("href","#i-" + iconMap[product.category]);
+    svg.append(use);
+    placeholder.append(svg,node("small","","Product photo coming soon"));
     placeholder.setAttribute("aria-hidden","true");
     const image = document.createElement("img");
     image.alt = product.name;
@@ -79,7 +86,7 @@ function renderProducts() {
     image.hidden = true;
     image.addEventListener("load",() => { image.hidden = false; placeholder.hidden = true; });
     image.addEventListener("error",() => { image.hidden = true; placeholder.hidden = false; });
-    image.src = product.image;
+    if (product.image) image.src = product.image;
     picture.append(placeholder,image,node("span","sample-badge","Sample listing"));
     const body = node("div","product-body");
     body.append(node("h3","",product.name),node("p","",product.description),
