@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#806020">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="NOOR Baby Care — For Little Ones, With Love. Baby essentials delivered across Bangladesh.">
+<title>NOOR Baby Care — For Little Ones, With Love</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="catalog.js"></script>
+<script defer src="cart-utils.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#shop">Skip to products</a>
+<div class="delivery-strip">Nationwide delivery · Dhaka ৳70 · Outside Dhaka ৳150–200</div>
+<div class="preview-strip">Website model · Sample catalog and prices · Online payments are not connected</div>
+<header>
+<div class="container header-row">
+<a class="brand" href="#" aria-label="NOOR Baby Care home">
+<img id="brandLogo" src="assets/noor-logo.jpg" alt="Official NOOR Baby Care logo" hidden>
+<span><strong>NOOR BABY CARE</strong><small>For Little Ones, With Love</small></span>
+</a>
+<div class="search" role="search"><label class="sr-only" for="search">Search products</label><input type="search" id="search" placeholder="Search diapers, wipes, feeding, baby care…"><span aria-hidden="true">⌕</span></div>
+<div class="header-actions"><a class="whatsapp-link" href="https://wa.me/8801410486844" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><button id="openCart" class="button">Cart <span id="cartCount">0</span></button></div>
+</div>
+<nav class="container" aria-label="Main navigation"><a href="#shop" data-category="All">Shop All</a><a href="#shop" data-category="Diapers">Diapers</a><a href="#shop" data-category="Wipes">Wipes</a><a href="#shop" data-category="Feeding">Feeding</a><a href="#shop" data-category="Baby Care">Baby Care</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero container">
+<div class="hero-copy"><p class="eyebrow">Care for every little moment</p><h1>Little essentials.<br>Lots of love.</h1><p class="intro">Everyday care for your little one,<br>delivered across Bangladesh.</p><div class="hero-actions"><a href="#shop" class="button">Shop Essentials →</a><a class="button outline" href="https://wa.me/8801410486844" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div><div class="hero-note"><span aria-hidden="true">♡</span> For Little Ones, With Love</div></div>
+<div class="hero-visual"><img id="heroPhoto" src="assets/hero.jpg" alt="NOOR Baby Care family and baby essentials" hidden><div id="heroFallback"><span class="hero-mark" aria-hidden="true">🧸</span><span class="eyebrow">A little care. Every day.</span><p>Beautiful little beginnings</p><span class="visual-note">Your approved family photo goes here</span></div><div class="floating-card"><span aria-hidden="true">♡</span><div><strong>Everyday baby essentials</strong><small>Chosen with your family in mind</small></div></div></div>
+</section>
+<section class="container benefits" aria-label="Store benefits"><div><span aria-hidden="true">↗</span><p><strong>Nationwide delivery</strong><small>Across Bangladesh</small></p></div><div><span aria-hidden="true">♡</span><p><strong>Easy order enquiries</strong><small>Connect with us on WhatsApp</small></p></div><div><span aria-hidden="true">◷</span><p><strong>24–72 hours</strong><small>Estimated delivery time</small></p></div></section>
+<section class="container shop" id="shop">
+<div class="section-heading"><div><p class="eyebrow">Small things. Everyday comfort.</p><h2>Everyday favourites</h2><p class="muted">Explore our sample baby essentials catalog.</p></div><span id="resultCount" class="muted" role="status"></span></div>
+<div id="filters" class="filters" aria-label="Filter by category"></div>
+<div id="productGrid" class="product-grid"></div><p id="emptySearch" class="empty" hidden>No matches found. Try another category or search.</p>
+<noscript><p>Enable JavaScript to browse the catalog, or <a href="https://wa.me/8801410486844">contact us on WhatsApp</a>.</p></noscript>
+</section>
+<section class="container partner-section"><div class="partner"><img id="aiwibiLogo" src="assets/aiwibi-logo.webp" alt="Aiwibi Bangladesh logo" hidden><p><strong>Authorised Selling Partner</strong><span>Aiwibi Bangladesh</span></p></div><div class="partner"><img id="steadfastLogo" src="assets/steadfast-logo.png" alt="Steadfast Courier logo" hidden><p><strong>Delivery Partner</strong><span>Steadfast Courier</span></p></div><div class="partner"><p><strong>Delivery made simple</strong><span>Dhaka ৳70 · Outside Dhaka ৳150–200</span><small>Outside-Dhaka charge confirmed before processing.</small></p></div></section>
+<section class="container help"><div><p class="eyebrow">Here to help</p><h2>Find the right essentials<br>for your little one.</h2><p>Ask us about sizes, availability and delivery.</p></div><a class="button" href="https://wa.me/8801410486844" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a></section>
+</main>
+<footer id="contact"><div class="container footer-grid"><div><strong class="footer-brand">NOOR BABY CARE</strong><p>For Little Ones, With Love</p><p class="muted">Baby essentials for little moments<br>and everyday family life.</p></div><div><strong>Contact us</strong><p><a href="tel:+8801410486844">+880 1410-486844</a></p><p><a href="mailto:info@noorbabycare.com">info@noorbabycare.com</a></p><p>House 2, Road 2/A, Sector 12,<br>Uttara, Dhaka 1230</p></div><div><strong>Stay connected</strong><p><a href="https://www.facebook.com/noorbabycare/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></p><p>www.noorbabycare.com</p><p class="muted">Cash on delivery · bKash · Cards<br>Payment methods shown for planning.</p></div></div><div class="container footer-bottom">© <span id="year"></span> NOOR Baby Care · Website model</div></footer>
+<dialog id="cartDialog" aria-labelledby="cartTitle"><div class="dialog-heading"><h2 id="cartTitle">Your cart</h2><button class="close" data-close="cartDialog" aria-label="Close cart">×</button></div><div id="cartItems"></div><div class="summary-line"><strong>Demo subtotal</strong><strong id="subtotal"></strong></div><p class="notice">Sample prices only. We will confirm selling prices, availability and delivery before processing.</p><button class="button full" id="startCheckout">Continue to checkout →</button></dialog>
+<dialog id="checkoutDialog" aria-labelledby="checkoutTitle"><div class="dialog-heading"><h2 id="checkoutTitle">Checkout model</h2><button class="close" data-close="checkoutDialog" aria-label="Close checkout">×</button></div><p class="notice">Preview an enquiry. This model does not collect payment or create an order on a server.</p><form id="checkoutForm"><label for="customerName">Full name</label><input id="customerName" name="customerName" required maxlength="100" autocomplete="name"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="tel" required pattern="(?:\+?88)?01[0-9]{9}" maxlength="14" autocomplete="tel" placeholder="01XXXXXXXXX" title="Use a Bangladesh mobile number, for example 01712345678"><label for="address">Delivery address</label><textarea id="address" name="address" required maxlength="500" autocomplete="street-address"></textarea><label for="deliveryArea">Delivery area</label><select id="deliveryArea" name="deliveryArea"><option value="dhaka">Dhaka — ৳70</option><option value="outside">Outside Dhaka — ৳150–200 (to be confirmed)</option></select><fieldset><legend>Payment method</legend><label><input type="radio" name="payment" value="Cash on delivery" checked>Cash on delivery request</label><label><input type="radio" name="payment" disabled>bKash — integration needed</label><label><input type="radio" name="payment" disabled>Card — integration needed</label></fieldset><div class="summary-line"><strong>Demo total including delivery</strong><strong id="checkoutTotal"></strong></div><button type="submit" class="button full">Review request →</button></form><section id="requestPreview" hidden><h3>Review your request</h3><p class="notice">No order has been placed. Open WhatsApp to review and send your enquiry.</p><pre id="requestOutput"></pre><div class="request-actions"><button class="button outline" id="editRequest">Edit details</button><a class="button" id="sendRequest" target="_blank" rel="noopener noreferrer">Open WhatsApp ↗</a></div></section></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
